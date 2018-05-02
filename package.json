@@ -1,0 +1,12 @@
+{
+  "name": "golie-api",
+  "version": "0.0.1",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
