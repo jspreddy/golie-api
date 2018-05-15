@@ -23,6 +23,20 @@ app.get('/goals', (req, res) => {
   });
 });
 
+
+app.post('/goals', (req, res) => {
+  res.send({
+    status: "success",
+    data: {
+      "id": 12,
+      "short": "BACK",
+      "title": "Back Workout!",
+      "updated": "2018-04-09",
+    }
+  });
+});
+
+
 app.get('/goals/:goal_id', (req, res) => {
   let goalId = Number(req.param('goal_id'));
   res.send({
@@ -35,7 +49,7 @@ app.get('/goals/:goal_id', (req, res) => {
 });
 
 
-app.put('/goals/:goal_id/activity', (req, res) => {
+app.post('/goals/:goal_id/activity', (req, res) => {
   let goalId = Number(req.param('goal_id'));
   res.send({
     status: "success",
