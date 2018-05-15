@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.end(JSON.stringify({
-    "data": {"hello":"hello asd"},
+    "data": {"hello":"hello world"},
     "status": "success"
   }));
 });
