@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nodemon src/server.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "devDependencies": {
     "nodemon": "^1.17.3"
   }
