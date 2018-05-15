@@ -1,5 +1,5 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 app.get('/', (req, res) => {
   res.send({
@@ -38,24 +38,24 @@ app.post('/goals', (req, res) => {
 
 
 app.get('/goals/:goal_id', (req, res) => {
-  let goalId = Number(req.param('goal_id'));
+  let params = req.params;
   res.send({
     status: "success",
     data: [],
     req_params: {
-      goal_id: goalId
+      goal_id: Number(params.goal_id)
     },
   });
 });
 
 
 app.post('/goals/:goal_id/activity', (req, res) => {
-  let goalId = Number(req.param('goal_id'));
+  let params = req.params;
   res.send({
     status: "success",
     data: [],
     req_params: {
-      goal_id: goalId
+      goal_id: Number(params.goal_id)
     },
   });
 });
